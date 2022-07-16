@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/ecuac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://file.myfontastic.com/KCwQM4MqDsPjBJv4Y4qtxH/icons.css" rel="stylesheet">
+    <title>MATEMATICA GOD</title>
+</head>
+<body>
+
+
+    <header class="main-header">
+        <div class="container container--flex">
+          <div class="logo-container column column--50">
+              <h1 class="logo">MATEMATICA-SHP</h1>
+          </div>
+          <div class="main-header__contactInfor column column--50">
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span></span>
+            <div class="social-icon">
+                <ul class="menu" id="menu">
+                    <li class="menu_item"><a href="paginaIngreso.html" class="menulink menu_link--select">CALCULADORA</a></li>
+                    <li class="menu_item"><a href="ecuaciones.html" class="menu_link">ECUACIONES</a></li>
+                </ul>
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+            </div>
+        </div>
+    </nav>
+    <div class="contenedor12">
+        
+        <div class="cuadrado">
+            <br>
+            <h2>ECUACIONES</h2>
+            <br>
+            <p>Fecha : <span id="fecha"></span> ---- Hora : <span id="hora"></span></p>
+            <hr color="black">
+            <br>
+            <h3>Ecuación de segundo grado</h3>
+            <h3>ax²+bx+c=0</h3>
+            <br>
+
+            
+            <form action="#" name="rellenar">
+
+                a <input type="text" id="vc" size="5" required value placeholder="N° 1"><br>
+                <br>
+                b <input type="text" id="vl" size="5" required value placeholder="N° 2"><br>
+                <br>
+                c <input type="text" id="vi" size="5" required value placeholder="N° 3"><br>
+                <br>
+                <input type="button" value="calcular" onclick="ecuacion();" style="cursor:pointer";>
+                <button id="borrar" onclick="borrar();" value="limpiar"  style="cursor:pointer;">limpiar</button>
+                <br><br>
+            </form>  
+            <form>
+                <p id="raices"></p>
+                <br> 
+                <p>X1 : <input id="x1"></input></p>
+                <br>
+                <p>X2 : <input id="x2"></input></p>
+            </form>
+    
+    <script src="js/codigo.js"></script>
+</body>
+</html>

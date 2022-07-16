@@ -1,0 +1,291 @@
+/*/---------------------------------------------------ECUACIONES-----------------------------------/*/
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: auto;
+  
+    text-align: left;
+}
+.cuadrado{
+    width: 300px;
+    height: 500px;
+    margin: 440PX auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: -15px;
+    top: -400px;
+    padding-left: 20px;
+}
+.contenedor{
+    width: 600px;
+    height: 600px;
+    background: rgb(224, 93, 93);
+    color: aliceblue;
+}  
+.img{
+    width: 600px;
+    height: 400px;
+    color: aliceblue;
+}  
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: rgb(26, 146, 146);
+}
+/* /--------------------------------------estilo base------------------------------------------------/ */
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.container--flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.container--flex .column--50{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    width: 100%;
+}
+/* /--------------------------------------estilo header------------------------------------------------/ */
+.main-header{
+    width: 100%;
+}
+.logo{
+    font-size: 1.8em;
+    color:black;
+    padding: 10px;
+    font-family: 'Pacífico', cursiva;
+    font-weight: 150;
+}
+.main-header_contactInfor_phone{
+    background:blue;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+.main-header_contactInfor_address{
+    padding: 10px;
+    color: beige;
+    size: 100px;    
+    margin: 0;
+}
+.main-header [class*="icon-"]:before {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+/* /------------------------------------estilo DEL MENU------------------------------------------------/ */
+.main-nav{
+    width: 100%;
+    position: initial;
+    z-index: 2000;
+    padding: 10px;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon .menu{
+    top: 55px ;
+    font-family: 'Source Code Pro', monospace;
+    ;
+}
+.social-icon [class*="icon-"] {
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+}
+.social-icon__link{
+    text-decoration: none;
+}
+.menu{
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 32%;
+    background-color: rgba(0,0,0,.25);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.menu__link{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.main-nav ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.main-nav li{
+    flex-grow: 1;
+    border-right: 1px solid #fff;
+}
+.main-nav li a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.main-nav li:hover{
+    background-color: #1877f2;
+}
+/* /------------------------------------estilo DEL COPIA----------------------------------------------/ */
+#contenedor1{
+width: 200px;
+height: 200px;
+margin: 200px auto;
+}
+
+
+/* }
+/------------------------------------estilos principales--------------------------------------------/ */
+.group--color .container{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: rgb(90, 90, 238);
+}
+.main__title{
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: 'Pacífico', cursiva;
+    font-weight: 100;
+}
+.column__title{
+    font-size: 1.3em;
+}
+.main_about_description .column--50:nth-child(2){
+    padding: 10px;
+}
+.btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    background: blue;
+}
+.group__title{
+    font-family: 'Pacífico', cursiva;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+.today-special .column{
+    margin-bottom: 30px;
+}
+.today-special__img{
+    margin: auto;
+    max-width: 350px;
+}
+.today-special__title{
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.today-special__price{
+    text-align: center;
+    font-size: 1.5em;
+    color: blue;
+    font-weight: bold;
+}
+
+/* /--------------------------------------estilo responsive-------------------------------------------/ */
+@media screen and (min-width:480px){
+    .logo{
+        color: white;
+    }
+}
+.main-header__contactInfor{
+    text-align: right;
+}
+.main-header_contactInfor_phone{
+    background: none;
+}
+.main-header_contactInfoe_address{
+    color: white;
+    
+}
+.main-nav{
+    background: rgba(0,0,0,0.25);
+}
+.banner{
+    margin-top: -145px;
+    z-index: -1000;
+}
+.banner__content{
+    font-size: 2em;
+}
+.banner__img{
+    height: 600px;
+}
+.column--50{
+    width: 49%;
+}
+.column--50-25{
+    width: 49%;
+}
+.column--33{
+    width: 33%;
+}
+.main_about_description .column--50:nth-child(2){
+    padding-left: 20px;
+    font-size: .9em;
+}
+.today-special .column{
+    border: 5px slid #ddd;
+    padding: 5px;
+}
+.today-special__img{
+    height: 250px;
+    object-fit: contain;
+}
+
+.social-icon .icon-facebook{
+    color: #1877f2;
+}
+
+.social-icon .icon-twitter{
+    color: #1da1f2;
+}
+
+.social-icon .icon-mail{
+    color: #ffc845;
+}
